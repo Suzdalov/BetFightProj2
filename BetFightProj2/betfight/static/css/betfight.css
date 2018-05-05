@@ -11,18 +11,45 @@ body {
     font-family: 'Cuprum', sans-serif;
 }
 .game_block {
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    border-radius: 8px;
-    -webkit-box-shadow: 0px 0px 7px #000000;
-    -moz-box-shadow: 0px 0px 7px #000000;
-    box-shadow: 0px 0px 7px #000000;
-    border: 2px solid #000000;
-    background-color: #E0FFFF;
+    max-width: 100%;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
     padding: 10px;
     opacity: 0.8;
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 12pt;
-    color: #888888;
+    font-family: 'Cuprum', sans-serif;
+    font-size: 20px; /*12pt;*/
+    color: #000000;
     text-align: left;
+    height: 200px;
+    width: 150px;
+}
+
+.game_teams {
+    line-height: 40px;
+    margin-left: auto;
+    align-items: center;
+}
+
+.home_team {
+    left: 30px;
+    display: inline-flex;
+}
+.guest_team {
+    left: 100px;
+    display:inline-flex;
+    margin-left:40px;
+}
+
+.game_time {
+    line-height:18px;
+    -webkit-align-content: center;
+    align-content: center;
+    font-size: 12px; /*12pt;*/
+}
+
+.game_title1 {
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+    margin-top: 60px;
+    font-size: 15px; /*12pt;*/
 }

@@ -1,13 +1,24 @@
 ﻿{% extends 'betfight/base.html' %}
-
 {% block content %}
     <h2>games</h2>
     <ul>
-         <div class="shedule_line">
+         <div class=".container-fluid">
                <div class="row">
+
         {% for match in object_list %}
-                     <div class="col-md-1">
-                        <li>{{ match.teamHome.name }}</li>
+                     <div class="col-xs-2">
+                         <div class="game_block">
+                             <div class="game_time">{{match.dateStart}}</div>
+                             <div class="game_teams">
+                                <div class="home_team">{{ match.teamHome.shortName }}</div>
+                                <div class="guest_team">{{ match.teamGuest.shortName }}</div>
+                             </div>
+                             {% if match.isOver %}
+                               <div class="game_title1">счет матча</div>
+                             {% else %}
+                               <div class="game_title1">Матч не начался или результаты не зафиксированы</div>
+                             {% endif %}
+                             </div>
                    </div>
         {% endfor %}
             </div>
