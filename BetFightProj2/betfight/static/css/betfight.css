@@ -10,3 +10,19 @@ body {
 .page-header {
     font-family: 'Cuprum', sans-serif;
 }
+.game_block {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 7px #000000;
+    -moz-box-shadow: 0px 0px 7px #000000;
+    box-shadow: 0px 0px 7px #000000;
+    border: 2px solid #000000;
+    background-color: #E0FFFF;
+    padding: 10px;
+    opacity: 0.8;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 12pt;
+    color: #888888;
+    text-align: left;
+}
