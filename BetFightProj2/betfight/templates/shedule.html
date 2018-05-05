@@ -1,0 +1,11 @@
+﻿{% extends 'betfight/base.html' %}
+
+{% block content %}
+    <h2>games</h2>
+    <ul>
+        {% for match in object_list %}
+            <li>{{ match.teamHome.name }}</li>
+        {% endfor %}
+         <button type="submit" class="save btn btn-default">setData</button>
+    </ul>
+{% endblock %}

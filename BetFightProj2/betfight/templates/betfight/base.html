@@ -1,0 +1,25 @@
+﻿{% load staticfiles %}
+
+<html>
+<head><title>Чемпионат мира по хоккею</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/betfight.css' %}">   
+</head>
+
+<body>
+    <div class="page-header">
+    <h2><a href="/iihf2018">Чемпионат мира по хоккею в Дании</a></h2>
+    </div>
+
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
