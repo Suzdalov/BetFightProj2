@@ -28,15 +28,16 @@ body {
     line-height: 40px;
     margin-left: auto;
     align-items: center;
+    display:block;
 }
 
 .home_team {
     left: 30px;
-    display: inline-flex;
+    display: inline-grid;
 }
 .guest_team {
     left: 100px;
-    display:inline-flex;
+    display:inline-grid;
     margin-left:40px;
 }
 
@@ -52,4 +53,15 @@ body {
     align-content: flex-start;
     margin-top: 60px;
     font-size: 15px; /*12pt;*/
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+    > .col, > [class*="col-"]
+
+{
+    padding-right: 0;
+    padding-left: 0;
+}
 }

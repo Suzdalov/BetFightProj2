@@ -4,6 +4,7 @@
     <ul>
          <div class=".container-fluid">
                <div class="row">
+                   <div class="no_gutters">
 
         {% for match in object_list %}
                      <div class="col-xs-2">
@@ -20,8 +21,10 @@
                              {% endif %}
                              </div>
                    </div>
+
         {% endfor %}
             </div>
+                   </div>
         </div>
          <button type="submit" class="save btn btn-default">setData</button>
     </ul>
