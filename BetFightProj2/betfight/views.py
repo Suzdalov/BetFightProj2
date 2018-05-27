@@ -9,7 +9,7 @@ from .models import match
 class sheduleView(ListView):
         model=match
         template_name = 'shedule.html'
-
+ 
 
 
 def home(request):

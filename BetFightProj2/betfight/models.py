@@ -35,14 +35,14 @@ class match (models.Model):
     event_ref = models.ForeignKey('event' , related_name='fromMatch')
     teamHome = models.ForeignKey('team',related_name='teamA')
     teamGuest = models.ForeignKey('team',related_name='teamB')
-    baseHomeScore = models.IntegerField(null=True)
-    baseGuestScore = models.IntegerField(null=True)
-    totalHomeScore = models.IntegerField(null=True)
-    totalGuestScore = models.IntegerField(null=True)
-    koeffHome = models.FloatField(null=True)
-    koeffDraw = models.FloatField(null=True)
-    koeffGuest = models.FloatField(null=True)
-
+    baseHomeScore = models.IntegerField(null=True, blank=True)
+    baseGuestScore = models.IntegerField(null=True, blank=True)
+    totalHomeScore = models.IntegerField(null=True, blank=True)
+    totalGuestScore = models.IntegerField(null=True, blank=True)
+    koeffHome = models.FloatField(null=True, blank=True)
+    koeffDraw = models.FloatField(null=True, blank=True)
+    koeffGuest = models.FloatField(null=True, blank=True)
+    isOver = models.BooleanField(default=False)
 
     def __str__(self):
         return self.teamHome.shortName+' vs '+self.teamGuest.shortName
